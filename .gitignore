@@ -1,0 +1,14 @@
+# ignore this folder,
+.idea/*
+
+# ignore generated xml files,
+*.xml
+
+.gradle
+build/
+
+#ignore logger file
+springLogger.log
+.idea/
+onlyForMe.md
+*.iml
