@@ -42,8 +42,8 @@ public class ItemController {
     }
 
     @GetMapping
-    public List<ItemDTO> items () {
-        return findAllUseCase.findAll().collect(Collectors.toList());
+    public List<ItemDTO> items (@RequestParam(name = "direction", required = false, defaultValue = "ASC") String direction) {
+        return findAllUseCase.findAll(direction).collect(Collectors.toList());
     }
 
     @PostMapping

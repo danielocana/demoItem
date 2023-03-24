@@ -12,3 +12,4 @@ springLogger.log
 .idea/
 onlyForMe.md
 *.iml
+/target
